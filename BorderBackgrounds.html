@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and Background</title>
+    <style>
+        #firstPara{
+            background-color: red;
+            height: 25px;
+            width: 200px;
+            /* border-width: 4px;
+            border-color: green;
+            border-style: solid; */
+            border: 4px green solid;
+            border-radius: 13px;
+        }
+        #secondPara{
+            background-color: green;
+            height: 25px;
+            width: 200px;
+            border-left: 4px rgb(255, 8, 8) solid;
+            border-right: 4px rgb(250, 234, 9) solid;
+            border-top-right-radius: 15px; /*adds buldge to the top right corner*/
+            border-bottom-left-radius: 15px;
+        }
+        #thirdPara{
+            height: 600px;
+            width: 800px;
+            border-top: 4px yellow solid;
+            border-left: 4px rgb(255, 8, 8) solid;
+            border-right: 4px rgb(9, 93, 250) solid;
+            border-bottom: 4px violet solid;
+            border-top-right-radius: 15px; /*adds buldge to the top right corner*/
+            border-bottom-left-radius: 15px;
+            background-image: url('https://images.unsplash.com/photo-1633113214735-2cd84b3587ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60');
+            background-repeat: no-repeat;
+            background-position:  center center;
+        }
+    </style>
+</head>
+<body>
+    <h3>First</h3>
+    <p id="firstPara">New Paragraph</p>
+
+    <h3>Second</h3>
+    <p id="secondPara">New Paragraph</p>
+
+    <h3>Third</h3>
+    <p id="thirdPara">New Paragraph</p>
+</body>
+</html>

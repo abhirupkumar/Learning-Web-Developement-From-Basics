@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Psuedo Selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .navigation {
+            display: flex;
+            font-size: 15px;
+            font-family: 'Smooch', cursive;
+        }
+
+        li {
+            font-size: 20px;
+            list-style: none;
+            padding: 0px 22px;
+        }
+
+        section {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 285px;
+            margin: 1px 145px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h2 {
+            font-size: 2rem
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Service</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to Coding World</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi amet quibusdam quas assumenda qui,
+            asperiores debitis, provident quaerat, rerum nemo maiores! Quis corporis aliquid ad.
+        </p>
+    </section>
+    <hr>
+</body>
+
+</html>

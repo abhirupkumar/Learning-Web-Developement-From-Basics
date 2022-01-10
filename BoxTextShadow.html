@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 15px 8px;
+        margin: 15px 8px;
+        border: 2px solid red;
+        background-color: burlywood;
+        box-shadow: 8px 11px 5px 1px rgb(10, 240, 163), 8px 5px red; /*Here the third number, i.e, 5px is the blur radius. And the fourth number, i.e, 1px is the spread radius*/
+        /* box-shadow: -8px -11px 5px 1px green; Shadow on upper left corner */
+    }
+    .card h2{
+        text-shadow: 3px 4px 5px rgb(114 111 111); /*2px is blur radius*/
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque et maiores minima inventore voluptate libero architecto quisquam cumque, omnis esse? Cumque explicabo accusantium blanditiis earum.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is Html course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ullam corporis blanditiis eos debitis delectus eaque deserunt, voluptates rem placeat, nesciunt ipsam dolor quasi adipisci!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ullam corporis blanditiis eos debitis delectus eaque deserunt, voluptates rem placeat, nesciunt ipsam dolor quasi adipisci!</p>
+        </div>
+    </div>
+</body>
+</html>

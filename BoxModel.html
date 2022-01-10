@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            /* universal selector*/
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px
+        }
+        .container{
+            background-color: rgb(211, 115, 235);
+            border: 3px solid rgb(161, 14, 247);
+            /* padding-top: 78px; gives space at the top
+            padding-bottom: 78px; gives space at the bottom*/
+            /* padding-left: 34px; gives space at the left*/
+            /* padding = top right bottom left */
+            /* padding: 23px 56px 6px 78px; */
+            /* padding: top/bottom left/right */
+            padding: 23px 56px;
+            margin: 34px 14px;
+            border-radius: 24px;
+            width: 500px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit commodi quibusdam officia deleniti ipsa provident neque beatae quo soluta atque cupiditate aperiam totam ad, itaque nemo velit esse dolorem unde!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit commodi quibusdam officia deleniti ipsa provident neque beatae quo soluta atque cupiditate aperiam totam ad, itaque nemo velit esse dolorem unde!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit commodi quibusdam officia deleniti ipsa provident neque beatae quo soluta atque cupiditate aperiam totam ad, itaque nemo velit esse dolorem unde!</p>
+    </div>
+</body>
+</html>

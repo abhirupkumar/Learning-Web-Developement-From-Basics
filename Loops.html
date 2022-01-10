@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is all about loops.
+    </div>
+    <script>
+        console.log("Yo bro! How are you?")
+        // let i = 0;
+        // for(i=0;i<3;i++){
+        //     console.log(i);
+        // }
+        let friends = ["Arka", "Ayanjoti", "Navneet", "Armaan", "Abhirup"];
+        // for (let index = 0; index < friends.length; index++) {
+        //     console.log("Hello " + friends[index]);
+        // }
+        // friends.forEach(function f(element){
+        //     console.log("Hello "+ element + " to modern Javascript");
+        // });
+        // for(element of friends){
+        //     console.log("Hello "+ element + " to modern Javascript");
+        // }
+        let employee = {
+            name: "Abhirup",
+            salary: 10000000,
+            channel: "Dev with AK"
+        }
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`)
+        }
+        let i = 0;
+        while(i<4){
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+        do{
+            console.log(`${i} is less than 8`);
+            i++;
+        }while(i<8);
+    </script>
+</body>
+</html>

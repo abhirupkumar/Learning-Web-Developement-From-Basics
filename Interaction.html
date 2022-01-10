@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+        //Alert in in-browser Javascript
+        // alert("This is a message"); //It will open a modal window. if you don't click ok on this message you cannot do anything in the website
+        
+        // let name = prompt("What is you name?","Guest");
+        // let name = prompt("What is you name?","");
+        // console.log(name);
+
+        let deletePost = confirm("Do you really want to delete this post?");
+        if(deletePost){
+            console.log("Your post has been deleted successfully.");
+        }
+        else{
+            console.log("You really want to delete the post.");
+        }
+        console.log(deletePost);
+    </script>
+</body>
+</html>

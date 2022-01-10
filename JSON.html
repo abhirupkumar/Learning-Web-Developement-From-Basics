@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <div class="container">This my conatainer</div>
+    <script>
+        let jsonObj = {
+            name: "Abhirup",
+            channel: "Dev With AK",
+            friend: "Ayanjoti",
+            food: "Mutton"
+        }
+        console.log(jsonObj);
+        let myJsonStr = JSON.stringify(jsonObj);//Convert object to string
+        console.log(myJsonStr);
+        
+        myJsonStr = myJsonStr.replace('Mutton', 'Chicken');
+        console.log(myJsonStr);
+        
+        let newJsonStr = JSON.parse(myJsonStr);//Convert string to object
+        console.log(newJsonStr);
+
+        //This process is used to consert complex objects to strings and send it to other networks and re-use it.
+
+
+    </script>
+</body>
+</html>
